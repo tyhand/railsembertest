@@ -1,0 +1,14 @@
+<h3>New User</h3>
+
+<form {{action "submit" on="submit"}}>
+  <label>Name</label>
+  {{input value=model.name required="required"}}
+  <br>
+  <label>Email</label>
+  {{input value=model.email required="required"}}
+  <br>
+  <label>Password</label>
+  {{input value=model.password type="password" required="required"}}
+  <br>
+  <button type="submit">Submit</button>
+</form>

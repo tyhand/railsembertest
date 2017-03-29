@@ -1,0 +1,15 @@
+<h1>Login</h1>
+
+{{#if errorMessage}}
+  <p>{{errorMessage}}</p>
+{{/if}}
+
+<form {{action 'authenticate' on='submit'}}>
+  <label for="identication">Email</label>
+  {{input value=identification id="identification" required="required"}}
+  <br />
+  <label for="password">Password</label>
+  {{input value=password id="password" required="required" type="password"}}
+  <br />
+  <button type="submit">Login</button>
+</form>
